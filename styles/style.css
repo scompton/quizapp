@@ -1,0 +1,145 @@
+/*float styles*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+  /*background: url('http://www.hdpaperwall.com/wp-content/uploads/2013/11/1391286.jpg') no-repeat center center fixed;
+  background: url('http://fc00.deviantart.net/fs70/f/2013/259/6/8/denver_broncos_logo_by_denversportswalls-d6mmox4.png') no-repeat center center fixed;*/
+  background-image: url('http://fc08.deviantart.net/fs6/i/2005/092/4/6/Broncos_Football_by_beansthestampede.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+body {
+  text-align: center;
+}
+
+header {
+  font-size: 120px;
+  /*color: white;*/
+  color: #EC6C0B;
+}
+
+nav {
+  font-size: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  text-decoration: none;
+}
+
+.start {
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  font-size: 80px;
+  font-weight: bold;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -100px;
+  border: none;
+  border-radius: 200px / 100px;
+  background-color: #EC6C0B;
+  color: #031432;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  color: white;
+  font-size: 80px;
+}
+.progress {
+  float: left;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+.score {
+  float: right;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+#questionArea {
+  display: none;
+  max-width: 800px;
+  height: auto;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 48px;
+}
+#answerArea {
+  max-width: 600px;
+  max-height: 500px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#answers {
+  display: none;
+  color: white;
+  font-size: 40px;
+  line-height: 60px;
+}
+button {
+  background-color: #EC6C0B;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 40px;
+}
+#messageArea {
+  display: none;
+  max-width: 800px;
+  height: auto;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 32px;
+}
+#messageArea .text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.correct {
+  font-size: 50px;
+  font-weight: bold;
+  color: green;
+}
+.incorrect {
+  font-size: 50px;
+  font-weight: bold;
+  color: red;
+}
+
+#results {
+  font-size: 75px;
+  font-weight: bold;
+  color: white;
+}
