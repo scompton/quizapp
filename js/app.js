@@ -122,11 +122,13 @@ function updateScore() {
 }
 
 function finishQuiz() {
-  $('footer').toggle(false);
+  $('.progress').empty();
+  $('.score').empty();
   var ma = $('#messageArea');
   ma.empty();
   ma.toggle(false);
-  ma.html('<p id="results">Your Score: '+ncorrect+' out of '+nq+'</p>');
+  ma.append('<p id="results">Your Score: '+ncorrect+' out of '+nq+'</p>');
+  ma.append('<button class="restart">Restart Quiz</button>');
   ma.show('slow');
 }
 
@@ -161,6 +163,15 @@ $(document).ready(function() {
     } else {
       finishQuiz();
     }
+  });
+
+  $('#messageArea').on('click', '.restart', function() {
+    $(this).hide('slow');
+
+    ncorrect = 0;
+    ci = 0;
+    showNext();
+    updateScore();
   });
 
 });
